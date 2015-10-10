@@ -6,8 +6,8 @@
 ```
 $(function(){
   $('#anchor-list').anchorlist({
-    content : $('body'),      // 範囲指定
-    header  : 'h2',           // 見出しの要素指定
+    content    : $('body'),   // 範囲指定
+    header     : 'h2',        // 見出しの要素指定
     classname  : 'anchorlist' // リスト<ul>のクラス名
   });
 });
