@@ -1,6 +1,14 @@
-# Anchor List (Test)
+# Anchor List
 
-- Githubの練習。試しに作ってみたもの
-- 特定の範囲、見出しごとにページ内リンクを生成
-- 冒頭などでそのリンク一覧を追加
+- 特定の範囲にある見出しごとにアンカーを生成
+- 指定した場所にそのリンク一覧を追加
 
+```
+$(function(){
+  $('#anchor-list').anchorlist({
+    content : $('body'),      // 範囲指定
+    header  : 'h2',           // 見出しの要素指定
+    classname  : 'anchorlist' // リスト<ul>のクラス名
+  });
+});
+```
