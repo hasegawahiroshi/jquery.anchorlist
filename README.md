@@ -1,13 +1,12 @@
 # Anchor List
 
-- 特定の範囲にある見出しごとにアンカーを生成
+- 特定の要素ごとにアンカーを生成
 - 指定した場所にそのリンク一覧を追加
 
 ```
 $(function(){
   $('#anchor-list').anchorlist({
-    content    : $('body'),   // 範囲指定
-    header     : 'h2',        // 見出しの要素指定
+    anchor     : $('h2'),     // リンク先となる見出しなど
     classname  : 'anchorlist' // リスト<ul>のクラス名
   });
 });
